@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Empleados",
+		"_postman_id": "624c5a17-2678-dabc-ecdb-a6afdf5d173a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consultar empleados",
+			"request": {
+				"url": "http://localhost:8080/rest/empleados/consultarEmpleados",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Permite consultar empleados"
+			},
+			"response": []
+		},
+		{
+			"name": "Crear empleado",
+			"request": {
+				"url": "http://localhost:8080/rest/empleados/crearEmpleado",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"nombre\": \"nombreEjemplo\",\n        \"apellidoPaterno\": \"nombreEjemplo\",\n        \"apellidoMaterno\": \"nombreEjemplo\",\n        \"email\": \"email@test.com\",\n        \"celular\": \"12 34 56 78\"\n    },"
+				},
+				"description": "Permite crear un empleado"
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar empleado",
+			"request": {
+				"url": "http://localhost:8080/rest/empleados/consultarEmpleado/14",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Permite consultar empleado"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar empleado",
+			"request": {
+				"url": "http://localhost:8080/rest/empleados/eliminarEmpleado/14",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "Permite eliminar un empleado"
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar empleado",
+			"request": {
+				"url": "http://localhost:8080/rest/empleados/actualizarEmpleado",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idEmpleado\": 3,\n    \"nombre\": \"Fabrizio,\n    \"apellidoPaterno\": \"River\",\n    \"apellidoMaterno\": \"\",\n    \"email\": \"fabrizio.rivero@wipro.com\",\n    \"celular\": \"\"\n}"
+				},
+				"description": "Permite crear un empleado"
+			},
+			"response": []
+		}
+	]
+}
