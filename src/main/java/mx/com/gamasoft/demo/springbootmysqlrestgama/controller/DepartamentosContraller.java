@@ -33,7 +33,7 @@ public class DepartamentosContraller {
 	}
 	///asdfhhh
 	@PostMapping(value ="/crearDepartamenta")
-	public Departamentos crearDepartamento(@RequestBody Departamentos departamento){
+	public Departamentos55555 crearDepartamento(@RequestBody Departamentos departamento){
 		
 		return departamentoRepository.save(departamento);
 	}
