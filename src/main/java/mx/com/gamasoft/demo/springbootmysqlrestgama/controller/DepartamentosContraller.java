@@ -36,7 +36,7 @@ public class DepartamentosContraller {
 	public Departamentos crearDepartamento(@RequestBody Departamentos departamento){
 		
 		return departamentoRepository.save(departamento);
-	}
+	} 
 	@PutMapping(value = "/actualizarEmpleado")
     public Departamentos actualizarDepartamento(@RequestBody Departamentos departamento) {
 		Departamentos departamentoBD = departamentoRepository.findOne(departamento.getIdDepartamento());
