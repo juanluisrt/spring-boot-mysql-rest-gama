@@ -31,9 +31,9 @@ public class DepartamentosContraller {
 		
 		return departamentoRepository.findOne(idDepartamento);
 	}
-	///asdfhhh
-	@PostMapping(value ="/crearDepartamenta")
-	public Departamentos55555 crearDepartamento(@RequestBody Departamentos departamento){
+	
+	@PostMapping(value ="/crearDepartamento")
+	public Departamentos crearDepartamento(@RequestBody Departamentos departamento){
 		
 		return departamentoRepository.save(departamento);
 	}
